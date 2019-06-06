@@ -1,13 +1,25 @@
-**FreeCodeCamp**- Information Security and Quality Assurance
-------
+API library example - FreeCodeCamp
+=====================================
 
-Project Personal Library
+First of all you must create *.env* file with these variables:
+```
+MONGO_URI_PROD="mongodb+srv://user:password@server/database"
+MONGO_URI_DEV="mongodb+srv://user:password@server/database"
+MONGO_URI_TEST="mongodb+srv://user:password@server/database"
 
-1) ADD YOUR MongoDB connection string to .env without quotes as db
-    `example: DB=mongodb://admin:pass@1234.mlab.com:1234/fccpersonallib`
-2) SET NODE_ENV to `test` without quotes
-3) You need to create all routes within `routes/api.js`
-4) You will add any security features to `server.js`
-5) You will create all of the functional tests in `tests/2_functional-tests.js`
+# server port
+PORT=3000
+PORT_TEST=3001
+
+# enable mocha tests
+NODE_ENV=fcctesting
 
 
+```
+**You can create use a mongodb server at mongodb Atlas service for free.**
+
+# Install
+* git clone https://github.com/davidpoza/fcc-project-library.git
+* npm Install
+* npm start
+* go localhost:3000 on your browser
